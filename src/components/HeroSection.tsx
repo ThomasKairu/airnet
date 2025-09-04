@@ -119,7 +119,7 @@ const HeroSection: React.FC = () => {
             <Stack spacing={4}>
               {/* Logo */}
               <Box sx={{ alignSelf: 'flex-start' }}>
-                <img src="/images/logo.jpg" alt="Airtelnet Logo" style={{ height: '40px' }} />
+                <img src="/images/logo.jpg" alt="Airtelnet Logo" style={{ height: '80px' }} />
               </Box>
 
               {/* Main Title */}
