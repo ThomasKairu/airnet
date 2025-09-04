@@ -165,6 +165,12 @@ const HeroSection: React.FC = () => {
                   variant="contained"
                   size="large"
                   endIcon={<ArrowForwardOutlined />}
+                  onClick={() => {
+                    const element = document.getElementById('plan-selector');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   sx={{
                     px: 4,
                     py: 1.5,

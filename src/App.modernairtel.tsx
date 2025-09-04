@@ -27,7 +27,9 @@ const App: React.FC = () => {
         <CssBaseline />
         <Box>
           <HeroSection />
-          <PlanSelector />
+          <Box id="plan-selector">
+            <PlanSelector />
+          </Box>
           <NetworkShowcase />
           <DeviceGallery />
           <SupportHub />
