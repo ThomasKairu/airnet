@@ -46,7 +46,7 @@ const GlassCard = styled(Card)(({ theme }) => ({
   }
 }));
 
-const ChatWidget = styled(GlassCard)(({ theme }) => ({
+const ChatWidget = styled(GlassCard)(() => ({
   position: 'fixed',
   bottom: 24,
   right: 24,
@@ -89,7 +89,7 @@ const supportChannels = [
     description: "Get instant help via WhatsApp",
     action: "Chat Now",
     color: "#25D366",
-    href: "https://wa.me/254740066232"
+    href: "https://wa.me/254752688954"
   },
   {
     icon: <CallOutlined />,
@@ -97,7 +97,7 @@ const supportChannels = [
     description: "Speak directly with our experts",
     action: "Call Now",
     color: "#E60000",
-    href: "tel:+254740066232"
+    href: "tel:+254752688954"
   },
   {
     icon: <EmailOutlined />,
@@ -105,7 +105,7 @@ const supportChannels = [
     description: "Send us detailed questions",
     action: "Email Us",
     color: "#0052CC",
-    href: "mailto:support@airtel.co.ke"
+    href: "mailto:waithy155@gmail.com"
   }
 ];
 
