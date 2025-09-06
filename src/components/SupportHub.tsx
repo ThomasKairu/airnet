@@ -38,7 +38,7 @@ const GlassCard = styled(Card)(({ theme }) => ({
   background: 'rgba(255, 255, 255, 0.8)',
   backdropFilter: 'blur(20px)',
   border: '1px solid rgba(255, 255, 255, 0.3)',
-  borderRadius: theme.shape.borderRadius * 2,
+  borderRadius: (theme.shape.borderRadius as number) * 2,
   transition: 'all 0.3s ease',
   '&:hover': {
     transform: 'translateY(-4px)',
