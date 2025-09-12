@@ -10,6 +10,7 @@ import PlanSelector from './components/PlanSelector';
 import NetworkShowcase from './components/NetworkShowcase';
 import DeviceGallery from './components/DeviceGallery';
 import SupportHub from './components/SupportHub';
+import Footer from './components/Footer';
 
 const createEmotionCache = () => {
   return createCache({
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <NetworkShowcase />
           <DeviceGallery />
           <SupportHub />
+          <Footer />
         </Box>
       </ThemeProvider>
     </CacheProvider>
