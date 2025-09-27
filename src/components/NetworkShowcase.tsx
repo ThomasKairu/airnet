@@ -37,11 +37,11 @@ const GlassCard = styled(Card)(({ theme }) => ({
   background: 'rgba(255, 255, 255, 0.1)',
   backdropFilter: 'blur(20px)',
   border: '1px solid rgba(255, 255, 255, 0.2)',
-  borderRadius: theme.shape.borderRadius * 2,
+  borderRadius: Number(theme.shape.borderRadius) * 2,
   color: 'white'
 }));
 
-const MetricCard = styled(GlassCard)(({ theme }) => ({
+const MetricCard = styled(GlassCard)(() => ({
   textAlign: 'center',
   transition: 'all 0.3s ease',
   '&:hover': {
@@ -50,7 +50,7 @@ const MetricCard = styled(GlassCard)(({ theme }) => ({
   }
 }));
 
-const TestimonialCard = styled(GlassCard)(({ theme }) => ({
+const TestimonialCard = styled(GlassCard)(() => ({
   height: '100%',
   transition: 'all 0.3s ease',
   '&:hover': {
@@ -116,7 +116,7 @@ const NetworkShowcase: React.FC = () => {
       
       // Test download speed
       const downloadStart = performance.now();
-      const downloadResponse = await fetch('https://httpbin.org/bytes/1000000', { cache: 'no-cache' });
+      await fetch('https://httpbin.org/bytes/1000000', { cache: 'no-cache' });
       const downloadEnd = performance.now();
       const downloadTime = (downloadEnd - downloadStart) / 1000; // seconds
       const downloadSpeed = Math.round((1 * 8) / downloadTime); // Mbps (1MB = 8Mb)
@@ -139,7 +139,7 @@ const NetworkShowcase: React.FC = () => {
       ];
 
       return () => intervals.forEach(clearTimeout);
-    } catch (error) {
+    } catch {
       // Fallback to simulated results if real test fails
       const intervals = [
         setTimeout(() => setSpeedTest(prev => ({ ...prev, ping: 15 })), 500),
@@ -166,6 +166,11 @@ const NetworkShowcase: React.FC = () => {
             <Typography variant="h6" sx={{ opacity: 0.8, maxWidth: 600, mx: 'auto' }}>
               Experience Kenya's most advanced 5G network with real-time performance metrics and nationwide coverage
             </Typography>
+          </Box>
+
+          {/* Core Expertise */}
+          <Box textAlign="center">
+            <h3 className="text-accent-orange font-semibold mb-2">💡 Core Expertise:</h3>
           </Box>
 
           {/* Network Metrics */}
