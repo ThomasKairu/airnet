@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Box } from '@mui/material';
 import createCache from "@emotion/cache";
@@ -22,6 +22,17 @@ const createEmotionCache = () => {
 const emotionCache = createEmotionCache();
 
 const App: React.FC = () => {
+  useEffect(() => {
+    const meta = document.createElement('meta');
+    meta.name = "google-site-verification";
+    meta.content = "JOjRDl0yJb4sOzIqr04quqXVzr_9Z8E_D0PTSDKGN3Q";
+    document.head.appendChild(meta);
+
+    return () => {
+      document.head.removeChild(meta);
+    };
+  }, []);
+
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
