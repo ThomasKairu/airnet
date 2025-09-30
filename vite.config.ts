@@ -5,6 +5,7 @@ import path from "path";
 import tsconfigPaths from "vite-tsconfig-paths";
 const config = {
   mode: "development",
+  publicDir: "public",
   build: {
     outDir: "dist",
     emptyOutDir: true,
@@ -25,6 +26,9 @@ const config = {
           dest: path.join("dist", "public/assets"),
         },
         { src: "./assets/*", dest: path.join("dist", "assets") },
+        { src: "./public/sitemap.xml", dest: "" },
+        { src: "./public/robots.txt", dest: "" },
+        { src: "./public/_redirects", dest: "" },
       ],
       silent: true,
     }),
