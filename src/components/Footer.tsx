@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <p>
           Copyright © {currentYear}{' '}
             <a 
-              href="/" 
+              href="https://airnet.pages.dev/" 
               className="footer-link"
               aria-label="Go to Airtelnet homepage"
             >
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             </a>{' '}
             | Powered by{' '}
             <a 
-              href="https://synapseflow.solutions" 
+              href="https://synapseflow-aru.pages.dev/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-link"
