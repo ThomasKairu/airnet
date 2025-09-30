@@ -153,7 +153,7 @@ const NetworkShowcase: React.FC = () => {
   };
 
   return (
-    <NetworkContainer sx={{ py: 10 }}>
+    <NetworkContainer id="network-showcase" sx={{ py: 10 }}>
       <AnimatedBackground />
       
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 2 }}>
@@ -247,7 +247,7 @@ const NetworkShowcase: React.FC = () => {
           </Box>
 
           {/* Speed Test Section */}
-          <GlassCard sx={{ p: 4 }}>
+          <GlassCard id="speed-test" sx={{ p: 4 }}>
             <Stack spacing={4}>
               <Box textAlign="center">
                 <Typography variant="h4" gutterBottom>

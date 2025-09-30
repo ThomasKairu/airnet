@@ -34,7 +34,7 @@ const DeviceGallery: React.FC = () => {
   };
 
   return (
-    <Box sx={{ py: 10, background: 'linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%)' }}>
+    <Box id="device-gallery" sx={{ py: 10, background: 'linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%)' }}>
       <Container maxWidth="xl">
         <Stack spacing={8}>
           {/* Header */}

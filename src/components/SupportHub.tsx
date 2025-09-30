@@ -143,7 +143,7 @@ const SupportHub: React.FC = () => {
   };
 
   return (
-    <SupportContainer sx={{ py: 10 }}>
+    <SupportContainer id="support-hub" sx={{ py: 10 }}>
       <Container maxWidth="xl">
         <Stack spacing={8}>
           {/* Header */}
@@ -213,7 +213,7 @@ const SupportHub: React.FC = () => {
           </Box>
 
           {/* FAQ Section */}
-          <GlassCard sx={{ p: 4 }}>
+          <GlassCard id="faq" sx={{ p: 4 }}>
             <Stack spacing={4}>
               <Box textAlign="center">
                 <Typography variant="h4" gutterBottom>
