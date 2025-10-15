@@ -69,7 +69,72 @@ const DeviceGallery: React.FC = () => {
             ))}
           </Box>
         </Stack>
+
+        {/* FAQ Section */}
+        <Box sx={{ mt: 10, py: 6, backgroundColor: 'neutral.100', borderRadius: 2 }}>
+          <Container maxWidth="md">
+            <Typography variant="h2" textAlign="center" gutterBottom>
+              Frequently Asked Questions
+            </Typography>
+            <Stack spacing={3} mt={4}>
+              <Box>
+                <Typography variant="h6" component="h3">How to Set Up 4G Smart Connect in Kenya?</Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Setting up your <a href="#device-gallery">4G Smart Connect</a> is simple. Just insert your Airtel SIM card, power on the device, and connect to the Wi-Fi network. No technical configuration is needed.
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" component="h3">How to improve 4G Smart Connect speeds?</Typography>
+                <Typography variant="body1" color="text.secondary">
+                  For optimal performance, place your router near a window and away from other electronic devices. You can also ensure your device firmware is updated through the device settings.
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" component="h3">What is the price of a 4G router in Kenya?</Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Our <a href="#device-gallery">4G Smart Connect</a> router is available for KES 4,500 and comes with free unlimited data at 10Mbps speeds.
+                </Typography>
+              </Box>
+            </Stack>
+          </Container>
+        </Box>
       </Container>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How to Set Up 4G Smart Connect in Kenya?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Setting up your 4G Smart Connect is simple. Just insert your Airtel SIM card, power on the device, and connect to the Wi-Fi network. No technical configuration is needed."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How to improve 4G Smart Connect speeds?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For optimal performance, place your router near a window and away from other electronic devices. You can also ensure your device firmware is updated through the device settings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the price of a 4G router in Kenya?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our 4G Smart Connect router is available for KES 4,500 and comes with free unlimited data at 10Mbps speeds."
+                }
+              }
+            ]
+          }
+        `}
+      </script>
 
       {/* Device Modal */}
       <DeviceModal
